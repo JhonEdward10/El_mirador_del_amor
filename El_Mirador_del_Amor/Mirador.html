@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mirador del Amor</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./Mirador.css">
+</head>
+<body>
+ 
+<!-- NAVBAR -->
+<nav>
+  <div class="logo">Mirador del Amor</div>
+  <ul class="nav-links">
+    <li><a href="#nosotros">Nosotros</a></li>
+    <li><a href="#experiencias">Experiencias</a></li>
+    <li><a href="#galeria">Galería</a></li>
+    <li><a href="#ubicacion">Ubicación</a></li>
+    <li><a href="#contacto">Reservar</a></li>
+  </ul>
+  <a href="https://wa.me/573115967967?text=Hola!%20Quiero%20reservar%20una%20visita%20al%20Mirador%20del%20Amor" class="btn-nav-wa" target="_blank">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    Reservar
+  </a>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Menú">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+ 
+<!-- MENÚ MÓVIL -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#nosotros" onclick="closeMenu()">Nosotros</a>
+  <a href="#experiencias" onclick="closeMenu()">Experiencias</a>
+  <a href="#galeria" onclick="closeMenu()">Galería</a>
+  <a href="#ubicacion" onclick="closeMenu()">Ubicación</a>
+  <a href="#contacto" onclick="closeMenu()">Reservar</a>
+</div>
+ 
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <p class="hero-subtitle">✦ Tarqui, Huila, Colombia ✦</p>
+    <h1 class="hero-title">Mirador<br><em>del Amor</em></h1>
+    <p class="hero-desc">Un lugar donde el tiempo se detiene y los momentos se convierten en recuerdos eternos. Vive una experiencia única junto a quien más amas.</p>
+    <a href="#contacto" class="btn-primary">Reserva tu Momento</a>
+  </div>
+</section>
+ 
+<!-- NOSOTROS -->
+<section id="nosotros">
+  <div class="section">
+    <div class="about-grid">
+      <div class="about-text">
+        <p class="section-label">✦ Nuestra Historia</p>
+        <h2 class="section-title">Un rincón creado para el amor</h2>
+        <p>El Mirador del Amor nació con un sueño: crear un espacio donde las personas puedan compartir momentos únicos rodeados de la maravillosa naturaleza de Tarqui.</p>
+        <p>Desde nuestras alturas, podrás contemplar paisajes que roban el aliento, mientras disfrutas de una atmósfera romántica pensada en cada detalle para ti y tus seres queridos.</p>
+        <p>Aquí cada atardecer es una obra de arte y cada visita se convierte en un recuerdo imborrable.</p>
+      </div>
+      <div class="about-image">
+        <img src="./Fotos del mirador/Foto principal.jpg" alt="Mirador del Amor">
+        <!-- <span style="position:relative;z-index:1;">Aquí va tu<br>foto principal<br>del mirador</span> -->
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- EXPERIENCIAS -->
+<section id="experiencias" class="exp-section">
+  <p class="section-label">✦ Lo que ofrecemos</p>
+  <h2 class="section-title">Experiencias Únicas</h2>
+  <div class="exp-grid">
+    <div class="exp-card">
+      <div class="exp-icon">🌅</div>
+      <h3>Atardeceres Mágicos</h3>
+      <p>Contempla los colores más increíbles del cielo mientras el sol se despide del día.</p>
+    </div>
+    <div class="exp-card">
+      <div class="exp-icon">📸</div>
+      <h3>Fotos Memorables</h3>
+      <p>Los rincones más fotogénicos para capturar esos momentos que quieres recordar siempre.</p>
+    </div>
+    <div class="exp-card">
+      <div class="exp-icon">💑</div>
+      <h3>Momentos Románticos</h3>
+      <p>El lugar perfecto para propuestas, aniversarios o simplemente compartir con quien amas.</p>
+    </div>
+  </div>
+</section>
+ 
+<!-- GALERÍA -->
+<section id="galeria">
+  <div class="section">
+    <p class="section-label">✦ Galería</p>
+    <h2 class="section-title">Momentos que inspiran</h2>
+    <div class="galeria-grid">
+      <div class="galeria-item">
+        <img src="./Fotos del mirador/Foto principal 2.jpg" alt="Vista principal">
+        <!-- <div class="foto-placeholder fp1">Foto principal del mirador</div> -->
+      </div>
+      <div class="galeria-item">
+        <img src="./Fotos del mirador/Paisaje.jpg" alt="Paisaje">
+        <!-- <div class="foto-placeholder fp2">Algun paisaje</div> -->
+      </div>
+      <div class="galeria-item">
+        <img src="./Fotos del mirador/IMG_7498.jpg" alt="Atardecer">
+        <!-- <div class="foto-placeholder fp3">Algun atardecer</div> -->
+      </div>
+      <div class="galeria-item">
+        <img src="./Fotos del mirador/IMG_7499.jpg" alt="Pareja">
+        <!-- <div class="foto-placeholder fp4">Pareja en el mirador</div> -->
+      </div>
+      <div class="galeria-item">
+        <img src="./Fotos del mirador/IMG_7490.jpg" alt="Naturaleza">
+        <!-- <div class="foto-placeholder fp5">Naturaleza</div> -->
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- UBICACIÓN -->
+<section id="ubicacion" class="ubicacion-section">
+  <div class="ubicacion-inner">
+    <div class="mapa-wrapper">
+      
+      <!-- Reemplaza con tu iframe de Google Maps -->
+     <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3286.3441301992343!2d-75.91947192503255!3d2.066628997914844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMsKwMDMnNTkuOSJOIDc1wrA1NScwMC44Ilc!5e1!3m2!1ses!2sco!4v1775088953064!5m2!1ses!2sco" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="mapa-placeholder">
+        📍 Aquí va el mapa<br>de Google Maps<br><br>
+        <small>Tarqui, Huila</small>
+      </div>
+    </div>
+    <div class="ubicacion-info">
+      <p class="section-label">✦ Cómo llegar</p>
+      <h3>Encuéntranos</h3>
+      <div class="info-item">
+        <div class="info-icon">📍</div>
+        <p>Inspeccion Maito, Tarqui, Huila, Colombia</p>
+      </div>
+      <div class="info-item">
+        <div class="info-icon">🕐</div>
+        <p>Abierto todos los días de [hora] a [hora]</p>
+      </div>
+      <div class="info-item">
+        <div class="info-icon">📞</div>
+        <p>+57 3115967967</p>
+      </div>
+      <div class="info-item">
+        <div class="info-icon">🚗</div>
+        <p>[Instrucciones de cómo llegar desde el centro de Pitalito]</p>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- CONTACTO -->
+<section id="contacto" class="contacto-section">
+  <p class="section-label">✦ Reservas</p>
+  <h2 class="section-title">¿Listo para vivir<br>tu momento?</h2>
+  <p style="color:var(--gris);line-height:1.8;">Escríbenos por WhatsApp y con gusto te ayudamos a planear tu visita perfecta al Mirador del Amor.</p>
+  <!-- Reemplaza XXXXXXXXXX con el número de WhatsApp -->
+  <a href="https://wa.me/573115967967?text=Hola!%20Quiero%20reservar%20una%20visita%20al%20Mirador%20del%20Amor%20para%20el%20Dia%20❤️" class="whatsapp-btn" target="_blank">
+    <svg class="wa-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+    Reservar por WhatsApp
+  </a>
+</section>
+ 
+<!-- BOTÓN FLOTANTE WHATSAPP -->
+<a href="https://wa.me/573115967967?text=Hola!%20Quiero%20reservar%20una%20visita%20al%20Mirador%20del%20Amor" class="wa-float" target="_blank">
+  <span class="wa-float-tooltip">¡Reserva aquí!</span>
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 <span>Mirador del Amor</span> · Tarqui, Huila, Colombia · Hecho con ♥</p>
+</footer>
+
+ <script src="./Mirador.js"></script>
+ 
+</body>
+</html>
